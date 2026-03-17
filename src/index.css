@@ -23,5 +23,33 @@
     /* Brand & status */
     --success: #297630;
     --success-foreground: #ffffff;
+
+    /* Table (from Figma spec) */
+    --table-header: #f8f7fb;
+    --table-text: #2f414a;
+    --table-accent: #498291;
+    --table-row-border: #ddd9eb;
+    --table-scrollbar: #d3cde5;
+    --table-pagination-text: #385966;
+
+    /* Status badge variants */
+    --badge-active-bg: #f1f6fd;
+    --badge-active-text: #3a6fd8;
+    --badge-pending-bg: #fbf8eb;
+    --badge-pending-text: #cb9127;
+    --badge-expired-bg: #f1f0f7;
+    --badge-expired-text: #7d649d;
+    --badge-blocked-bg: #fdf3f3;
+    --badge-blocked-text: #c44755;
+    --badge-corp-admin-bg: #f2f8f9;
+    --badge-corp-admin-text: #3d687d;
+    --badge-company-admin-bg: #f1f0f7;
+    --badge-company-admin-text: #7d649d;
+    --badge-executive-bg: #f1f6fd;
+    --badge-executive-text: #3a6fd8;
+    --badge-success-bg: #effaf5;
+    --badge-success-text: #2f8f6b;
+    --badge-warning-bg: #fbf8eb;
+    --badge-warning-text: #cb9127;
   }
 }

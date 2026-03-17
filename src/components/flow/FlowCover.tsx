@@ -26,7 +26,7 @@ export function FlowCover() {
         >
           <Badge
             variant="success"
-            className="h-16 w-[334px] shrink-0 grow-0 text-[28px]"
+            className="h-16 w-[334px] shrink-0 grow-0 rounded-[32px] py-2 px-6 text-[28px]"
           >
             👍 Design Completed
           </Badge>

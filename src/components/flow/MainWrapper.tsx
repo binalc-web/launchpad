@@ -1,5 +1,6 @@
 import { Button, Input } from "@/components/ui";
-import { Search, Upload, UserPlus, ChevronLeft, ChevronRight } from "lucide-react";
+import { UserDirectoryTable } from "./UserDirectoryTable";
+import { Search, Upload, UserPlus } from "lucide-react";
 
 /**
  * Main Wrapper - User Directory main content area.
@@ -123,75 +124,9 @@ export function MainWrapper() {
             </div>
           </div>
 
-          {/* Table */}
-          <div
-            className="min-w-0 flex-1 overflow-x-auto rounded-lg border border-border"
-            data-name="Table"
-            role="region"
-            aria-label="Users table"
-          >
-            <table className="w-full min-w-[800px] border-collapse text-left text-sm">
-              <thead>
-                <tr className="border-b border-border bg-muted/50">
-                  <th className="h-10 px-4 text-left font-medium text-foreground">Name</th>
-                  <th className="h-10 px-4 text-left font-medium text-foreground">Email</th>
-                  <th className="h-10 px-4 text-left font-medium text-foreground">Role</th>
-                  <th className="h-10 px-4 text-left font-medium text-foreground">Status</th>
-                  <th className="h-10 px-4 text-left font-medium text-foreground">Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  { name: "John Doe", email: "john@example.com", role: "Admin", status: "Active" },
-                  { name: "Jane Smith", email: "jane@example.com", role: "Editor", status: "Active" },
-                  { name: "Bob Wilson", email: "bob@example.com", role: "Viewer", status: "Pending" },
-                ].map((row, i) => (
-                  <tr
-                    key={i}
-                    className="border-b border-border last:border-b-0 hover:bg-muted/30"
-                  >
-                    <td className="h-12 px-4 font-medium text-foreground">{row.name}</td>
-                    <td className="h-12 px-4 text-muted-foreground">{row.email}</td>
-                    <td className="h-12 px-4 text-muted-foreground">{row.role}</td>
-                    <td className="h-12 px-4">
-                      <span
-                        className={
-                          row.status === "Active"
-                            ? "text-success"
-                            : "text-muted-foreground"
-                        }
-                      >
-                        {row.status}
-                      </span>
-                    </td>
-                    <td className="h-12 px-4">
-                      <Button variant="ghost" size="sm">
-                        Edit
-                      </Button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          {/* Pagination */}
-          <div
-            className="flex w-full flex-row items-center justify-between gap-4"
-            data-name="Pagination"
-            role="navigation"
-            aria-label="Table pagination"
-          >
-            <p className="text-sm text-muted-foreground">Showing 1–3 of 3 users</p>
-            <div className="flex flex-row items-center gap-1">
-              <Button variant="outline" size="sm" disabled aria-label="Previous page">
-                <ChevronLeft className="h-4 w-4" />
-              </Button>
-              <span className="px-2 text-sm text-foreground">1</span>
-              <Button variant="outline" size="sm" disabled aria-label="Next page">
-                <ChevronRight className="h-4 w-4" />
-              </Button>
-            </div>
+          {/* User Directory Table - pixel-perfect from Figma spec */}
+          <div className="min-w-0 flex-1 overflow-x-auto">
+            <UserDirectoryTable />
           </div>
         </div>
       </div>
