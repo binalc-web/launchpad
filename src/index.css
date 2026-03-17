@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core */
+    --background: #000000;
+    --foreground: #ffffff;
+
+    /* Primary & interactive */
+    --primary: #ffffff;
+    --primary-foreground: #000000;
+
+    /* Muted */
+    --muted: #27272a;
+    --muted-foreground: #a1a1aa;
+
+    /* Border & ring */
+    --border: #27272a;
+    --ring: #ffffff;
+
+    /* Brand & status */
+    --success: #297630;
+    --success-foreground: #ffffff;
+  }
+}
