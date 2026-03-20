@@ -18,6 +18,13 @@
   /* Flow cover tokens */
   --success: #297630;
   --background-dark: #000000;
+  /* Sidebar tokens (map to existing where possible) */
+  --sidebar-border: var(--border);
+  --sidebar-label: var(--primary);
+  --sidebar-text: var(--foreground);
+  --sidebar-badge-bg: var(--brand-muted);
+  --sidebar-badge-text: var(--brand-secondary);
+  --sidebar-scrollbar: var(--border);
 }
 
 @theme inline {
@@ -34,6 +41,12 @@
   --color-brand-muted: var(--brand-muted);
   --color-success: var(--success);
   --color-background-dark: var(--background-dark);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-label: var(--sidebar-label);
+  --color-sidebar-text: var(--sidebar-text);
+  --color-sidebar-badge-bg: var(--sidebar-badge-bg);
+  --color-sidebar-badge-text: var(--sidebar-badge-text);
+  --color-sidebar-scrollbar: var(--sidebar-scrollbar);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
