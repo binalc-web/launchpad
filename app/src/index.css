@@ -18,6 +18,13 @@
   /* Flow cover tokens */
   --success: #297630;
   --background-dark: #000000;
+  /* Sidebar tokens */
+  --sidebar-border: var(--border);
+  --sidebar-label: var(--primary);
+  --sidebar-text: var(--foreground);
+  --sidebar-badge-bg: var(--brand-muted);
+  --sidebar-badge-text: var(--brand-secondary);
+  --sidebar-scrollbar: #d3cde5;
 }
 
 @theme inline {
