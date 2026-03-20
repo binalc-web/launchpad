@@ -100,6 +100,11 @@ export default function ViewUserDetailsPage() {
                 <Edit className="w-4 h-4" />
                 Edit Contact
               </Button>
+              <Link href={ROUTES.EDIT_USER_DETAILS}>
+                <Button variant="outline">
+                  Edit User
+                </Button>
+              </Link>
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <Send className="w-4 h-4" />
                 Send Invite

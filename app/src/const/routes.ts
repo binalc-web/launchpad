@@ -1,6 +1,7 @@
 export const ROUTES = {
   USER_DIRECTORY: "/",
   VIEW_USER_DETAILS: "/user-details",
+  EDIT_USER_DETAILS: "/edit-user-details",
   FLOW_COVER: "/flow-cover",
   DASHBOARD: "/",
   CORPORATION_DIRECTORY: "/",
