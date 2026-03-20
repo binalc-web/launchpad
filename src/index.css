@@ -15,9 +15,19 @@
   --brand-primary: #305fa1;
   --brand-secondary: #3a6fd8;
   --brand-muted: #f1f6fd;
+  /* Login page */
+  --background-page: #f8f7fb;
+  --muted-text: #385966;
   /* Flow cover tokens */
   --success: #297630;
   --background-dark: #000000;
+  /* Sidebar tokens */
+  --sidebar-border: var(--border);
+  --sidebar-label: var(--primary);
+  --sidebar-text: var(--foreground);
+  --sidebar-badge-bg: var(--brand-muted);
+  --sidebar-badge-text: var(--brand-secondary);
+  --sidebar-scrollbar: #d3cde5;
 }
 
 @theme inline {
@@ -32,6 +42,8 @@
   --color-brand-primary: var(--brand-primary);
   --color-brand-secondary: var(--brand-secondary);
   --color-brand-muted: var(--brand-muted);
+  --color-background-page: var(--background-page);
+  --color-muted-text: var(--muted-text);
   --color-success: var(--success);
   --color-background-dark: var(--background-dark);
   --font-sans: ui-sans-serif, system-ui, sans-serif;
