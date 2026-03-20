@@ -1,4 +1,5 @@
 export const ROUTES = {
+  LOGIN: "/login",
   USER_DIRECTORY: "/",
   VIEW_USER_DETAILS: "/user-details",
   VIEW_CONTACT_DETAILS: "/user-details/contact",
